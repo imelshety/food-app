@@ -1,0 +1,21 @@
+*
+{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+/* Auth pages */
+.bg-auth
+{
+ width: 100%;
+height: 100vh;
+background-image: url('/assets/auth/bg-auth.jfif');
+background-size: cover;
+background-position: center center;
+}
+.bg-overly
+{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(47,140,69,0.7),rgba(0,0,0,0.5));
+}
