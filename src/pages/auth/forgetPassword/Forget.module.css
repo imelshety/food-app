@@ -1,0 +1,83 @@
+/* Default styles for larger screens */
+.title {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30.26px;
+    color: #494949;
+}
+
+.subTitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    color: #49494999;
+}
+
+.icon {
+    font-size: 21px;
+    color: #8391A1;
+}
+
+.btn {
+    width: 100%;
+    background-color: #4AA35A !important;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+
+.linkContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -8px;
+    margin-bottom: 20px;
+}
+
+.registerLink {
+    font-size: 16px;
+    font-weight: 500;
+    color: #3A3A3D;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.forgotLink {
+    font-size: 16px;
+    font-weight: 500;
+    color: #4AA35A;
+    text-decoration: none;
+    cursor: pointer;
+}
+.errorText {
+    color: red;
+    font-size: 14px;
+    margin-top: -8px;
+    margin-bottom: 8px;
+  }
+  
+
+/* Small devices (portrait phones, 320px and up) */
+@media (min-width: 320px) and (max-width: 767px) {
+    .title {
+        font-size: 16px;
+    }
+    .subTitle {
+        font-size: 12px;
+    }
+    .icon {
+        font-size: 14px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up to 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .title {
+        font-size: 18px;
+    }
+    .subTitle {
+        font-size: 15px;
+    }
+    .icon {
+        font-size: 16px;
+    }
+}

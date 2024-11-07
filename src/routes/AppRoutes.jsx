@@ -1,13 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
-import Login from "../pages/auth/Login";
 import AuthLayout from "../layout/AuthLayout";
-import Register from "../pages/auth/Register";
-import ForgetPassword from "../pages/auth/ForgetPassword";
-import ResetPassword from "../pages/auth/ResetPassword";
-import ChangePassword from "../pages/auth/ChangePassword";
 import ErrorPage from "../pages/shared/ErrorPage";
 import MasterLayout from "../layout/MasterLayout";
 import Home from "../pages/ui/Home";
+import Login from "../pages/auth/login/Login";
+import ForgetPassword from './../pages/auth/forgetPassword/ForgetPassword';
+import Register from "../pages/auth/register/Register";
+import ResetPassword from './../pages/auth/resetPassword/ResetPassword';
+import ChangePassword from './../pages/auth/changepassword/ChangePassword';
 
     const routers = createBrowserRouter([
         {
