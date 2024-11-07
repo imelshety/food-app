@@ -2,7 +2,7 @@
 import { useForm } from 'react-hook-form';
 import { Button, Form, InputGroup } from 'react-bootstrap';
 import { IoIosPhonePortrait } from 'react-icons/io';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import styles from './Forget.module.css';
 import axios from 'axios';
 import { toast } from 'react-toastify';
@@ -46,14 +46,11 @@ let navigate = useNavigate();
         />
       </InputGroup>
       {errors.email && <p className={styles.errorText}>{errors.email.message}</p>}
-      <div className={styles.linkContainer}>
-        <Link to="/reset-password" className={styles.forgotLink}>Forget Password?</Link>
-      </div>
 
       <Button type="submit" className={styles.btn}>Submit</Button>
     </Form>
     </>
   );
 };
-  
+
 export default ForgetPassword;
