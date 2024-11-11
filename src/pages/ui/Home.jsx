@@ -1,11 +1,13 @@
 import { useAuth } from "../../context/AuthContext";
 
 const Home = () => {
-  const {logData} = useAuth();
+  const { logData } = useAuth(); // Get user data from AuthContext
   console.log(logData);
-  
   return (
-    <div>Home</div>
+   
+    <div className="d-flex">
+    home {logData.userName}
+   </div>
   )
 }
 

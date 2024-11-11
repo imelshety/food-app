@@ -9,6 +9,9 @@ import Register from "../pages/auth/register/Register";
 import ResetPassword from "./../pages/auth/resetPassword/ResetPassword";
 import ChangePassword from "./../pages/auth/changepassword/ChangePassword";
 import ProtectedRoute from "../components/auth/ProtectedRoute";
+import Resipes from "../pages/ui/Resipes";
+import Categories from "../pages/ui/Categories";
+import Users from "../pages/ui/Users";
 
 const routers = createBrowserRouter([
   {
@@ -25,13 +28,24 @@ const routers = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/home",
-    element: <ProtectedRoute><MasterLayout /></ProtectedRoute> ,
+    path: "home",
+    element: (
+      <ProtectedRoute>
+        <MasterLayout />
+      </ProtectedRoute>
+    ),
     children: [
-      { index: true, element: <Home /> },
-      { path: "/home", element: <Home /> },
+      { index: true, element: <Home /> }, 
+      { path : 'recipes', element : <Resipes/> },
+      { path : 'categories', element : <Categories/> },
+      { path : 'users', element : <Users/> },
+
+
+
     ],
+    errorElement: <ErrorPage />,
   },
 ]);
+
 
 export default routers;

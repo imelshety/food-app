@@ -57,4 +57,44 @@ background-position: center center;
     width: 400px !important; /* Adjust logo size for large screens */
   }
 }
+/* Sidebar styling */
+.ps-sidebar-root, .ps-sidebar-container {
+  background-color: #1F263E !important;
+  border: none !important;
+  transition: width 0.3s ease;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.ps-menuitem-root {
+  color: white !important;
+  background-color: transparent !important;
+}
+.ps-menuitem-root:hover , .ps-menu-button:hover
+{
+  background-color: transparent !important;
+  color: #00FFB2 !important;
+  transition: all 0.6s ease;
+}
+/* Active link styling */
+.active-link {
+  color: #00FFB2 !important; /* Active text color */
+  background-color: transparent !important; /* Your desired background color */
+  border-radius: 4px; /* Optional: round the corners */
+}
+
+
+/* Logo styling */
+.sidebar-logo {
+  cursor: pointer;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.full-logo {
+  width: 176px; /* Full logo size */
+}
+
+.small-logo {
+  width: 80px; /* Smaller logo size for closed sidebar */
+}
 

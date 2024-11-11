@@ -21,12 +21,23 @@ const Login = () => {
 
   const onSubmit = async (data) => {
     try {
+      // Login API call
       const response = await axios.post('https://upskilling-egypt.com:3006/api/v1/Users/Login', data);
       const token = response.data.token;
-
+  
       if (token) {
-        console.log(token);
-        login(localStorage.getItem("token"));
+        // Store token in local storage and update authentication context
+        localStorage.setItem('token', token);
+        login(token);
+  
+        // Make the get request with the token in the authorization header
+        const userResponse = await axios.get('https://upskilling-egypt.com:3006/api/v1/Users/currentUser', {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+  
+        console.log(userResponse.data);
         navigate('/home');
         toast.success('Login successful');
       } else {
@@ -40,6 +51,7 @@ const Login = () => {
       }
     }
   };
+  
 
   return (
     <Form className='w-100' onSubmit={handleSubmit(onSubmit)}>
