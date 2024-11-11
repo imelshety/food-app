@@ -17,7 +17,7 @@ const SideBar = () => {
   };
 
   return (
-    <div className={`container p-3 ps-sidebar-root ${isOpen ? "open" : "closed"}`}>
+    <div className={`container py-3 ps-sidebar-root ${isOpen ? "open" : "closed"}`}>
       <Sidebar width={isOpen ? "250px" : "80px"}>
         <Menu className="p-4 d-flex justify-content-center align-items-center gap-2">
           <MenuItem component={<Link to="/home" />} onClick={handleToggle} className="d-flex justify-content-start align-items-center mb-5">

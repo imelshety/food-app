@@ -64,6 +64,8 @@ background-position: center center;
   transition: width 0.3s ease;
   height: 100vh;
   overflow: hidden;
+  border-top-right-radius: 58px;
+
 }
 
 .ps-menuitem-root {

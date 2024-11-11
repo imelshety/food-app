@@ -10,7 +10,7 @@ const MasterLayout = () => {
   
   return (
    <>
-   <div className="container-fluid w-100 d-flex">
+   <div className=" w-100 d-flex">
    <div>
    <SideBar/>
    </div>
