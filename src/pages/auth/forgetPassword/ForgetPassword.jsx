@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import styles from './Forget.module.css';
 import axios from 'axios';
 import { toast } from 'react-toastify';
+import { AUTH_URL } from '../../../services/url';
 
 const ForgetPassword = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -13,7 +14,7 @@ let navigate = useNavigate();
   
   const onSubmit = async (data) => {
     try {
-      let response = await axios.post('https://upskilling-egypt.com:3006/api/v1/Users/Reset/Request', data);
+      let response = await axios.post(`${AUTH_URL}Reset/Request`, data);
       console.log(response.data);
       toast.success(response.data);
       navigate('/reset-password');

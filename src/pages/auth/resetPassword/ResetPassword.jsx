@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import styles from "./Reset.module.css"; // Make sure you have this CSS file
 import axios from "axios";
 import { toast } from "react-toastify";
+import { AUTH_URL } from "../../../services/url";
 
 const RestPassword = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -25,7 +26,7 @@ const RestPassword = () => {
   const onSubmit = async (data) => {
     try {
       let response = await axios.post(
-        "https://upskilling-egypt.com:3006/api/v1/Users/Reset",
+        `${AUTH_URL}Reset`,
         data
       );
       console.log(response.data);

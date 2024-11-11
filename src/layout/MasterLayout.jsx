@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
-import SideBar from "../pages/shared/SideBar";
-import Navbar from "../pages/shared/Navbar";
-import Header from "../pages/shared/Header/Header";
+import SideBar from "../components/shared/sidebar/SideBar";
+import Navbar from "../components/shared/navbar/Navbar";
+import Header from "../components/shared/Header/Header";
 
 const MasterLayout = () => {
   const {logData} = useAuth();

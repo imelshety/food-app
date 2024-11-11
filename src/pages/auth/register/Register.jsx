@@ -7,6 +7,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import styles from './Register.module.css'; // Make sure you have this CSS file
 import axios from 'axios';
 import { toast } from 'react-toastify';
+import { AUTH_URL } from '../../../services/url';
 
 const Register = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -19,7 +20,7 @@ const Register = () => {
 
   const onSubmit = async (data) => {
     try {
-      let response = await axios.post('https://upskilling-egypt.com:3006/api/v1/Users/Register', data);
+      let response = await axios.post(`${AUTH_URL}Register`, data);
       console.log(response.data);
       navigate('/login');
       toast.success('Registration successful');

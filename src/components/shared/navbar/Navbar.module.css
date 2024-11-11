@@ -1,0 +1,102 @@
+/* Navbar.module.css */
+
+.navbar {
+    width: 98%;
+    background-color: #F8F9FB;
+    padding: 1rem;
+    border-radius: 16px;
+    box-shadow: #333;
+
+  }
+  
+  .navContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .searchContainer {
+    position: relative;
+    width: 60%;
+  }
+  
+  .searchInput {
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 8px 12px 8px 36px;
+    border: 1px solid #ced4da;
+    font-size: 1rem;
+  }
+  
+  .searchIcon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+  }
+  
+  .profileSection {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+  }
+  
+  .notificationIcon {
+    color: #6c757d;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .profileInfo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .userName {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .dropdownMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width: 150px;
+    z-index: 10;
+  }
+  
+  .dropdownItem {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .dropdownItem:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .icon {
+    margin-right: 8px;
+  }
+  

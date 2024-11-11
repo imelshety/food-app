@@ -9,6 +9,7 @@ import styles from './Login.module.css';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { useAuth } from '../../../context/AuthContext';
+import { AUTH_URL } from '../../../services/url';
 
 const Login = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -22,7 +23,8 @@ const Login = () => {
   const onSubmit = async (data) => {
     try {
       // Login API call
-      const response = await axios.post('https://upskilling-egypt.com:3006/api/v1/Users/Login', data);
+      //'https://upskilling-egypt.com:3006/api/v1/Users/Login'
+      const response = await axios.post(`${AUTH_URL}Login`, data);
       const token = response.data.token;
   
       if (token) {
@@ -31,7 +33,7 @@ const Login = () => {
         login(token);
   
         // Make the get request with the token in the authorization header
-        const userResponse = await axios.get('https://upskilling-egypt.com:3006/api/v1/Users/currentUser', {
+        const userResponse = await axios.get(`{${AUTH_URL}currentUser`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

@@ -7,7 +7,6 @@ import Login from "../pages/auth/login/Login";
 import ForgetPassword from "./../pages/auth/forgetPassword/ForgetPassword";
 import Register from "../pages/auth/register/Register";
 import ResetPassword from "./../pages/auth/resetPassword/ResetPassword";
-import ChangePassword from "./../pages/auth/changepassword/ChangePassword";
 import ProtectedRoute from "../components/auth/ProtectedRoute";
 import Resipes from "../pages/ui/Resipes";
 import Categories from "../pages/ui/Categories";
@@ -23,7 +22,6 @@ const routers = createBrowserRouter([
       { path: "signup", element: <Register /> },
       { path: "forget-password", element: <ForgetPassword /> },
       { path: "reset-password", element: <ResetPassword /> },
-      { path: "change-password", element: <ChangePassword /> },
     ],
     errorElement: <ErrorPage />,
   },
