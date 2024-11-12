@@ -1,6 +1,66 @@
 /* header style */
-Header {
-    width: 100%;
+header {
+    margin: 0 10px 0 px;
+    width: 98%;
     border-radius: 15px;
-    background-color: #009247;
+    background-color: #009247 !important;
+    display: flex;
+    justify-content: space-around;
+    gap: 12rem;
+    padding-inline: 1px;
+    position: relative;
+    overflow: hidden;
+}
+header p 
+{
+    width: 484px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF !important;
+    letter-spacing: 4%;
+    line-height: 24px;
+}
+/* shapes  */
+.shape1
+{
+    position:absolute ;
+    top: 3rem;
+    left: 4%;
+    width: 60px;
+}
+.shape2
+{
+    position:absolute ;
+    top: 1rem;
+    left: 40%;
+    width: 146px;
+}
+.shape3
+{
+    position:absolute ;
+    bottom: -8px;
+    left: -16px;
+    width: 146px;
+}
+.shape4
+{
+    position:absolute ;
+    bottom: 8px;
+    left: 45%;
+    width: 73px;
+}
+.shape5
+{
+    position:absolute ;
+    bottom: 50%;
+    left: 60%;
+    width: 44px;
+}
+.shape6
+{
+    position:absolute ;
+    bottom: 8px;
+   right: -60px;
+    width: 225px;
+    z-index: 0;
 }
