@@ -25,7 +25,7 @@ if (location.pathname === '/home/recipes' || location.pathname === '/home/catego
         <h1 className='fw-bold text-white'>{title}</h1>
         <p>{subtitle}</p>
       </div>
-      <img src={currentImage} alt="header image" className='z-3' />
+      <img src={currentImage} alt="header image" className={styles.headerLoge} />
     </header>
   );
 };

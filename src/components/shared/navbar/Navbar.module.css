@@ -13,13 +13,41 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 9rem;
   }
+
   
   .searchContainer {
     position: relative;
     width: 60%;
   }
   
+  /* Small devices (portrait phones, 320px and up) */
+@media (min-width: 320px) {
+  .navContainer {
+   flex-direction: column !important;
+   align-items: start;
+   gap: 1rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px){
+  .navContainer {
+      flex-direction: row !important; 
+   gap: 0rem;
+
+     }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navContainer {
+      flex-direction: row !important; 
+    gap: 9rem;
+      
+  }
+}
   .searchInput {
     width: 100%;
     background-color: white;
