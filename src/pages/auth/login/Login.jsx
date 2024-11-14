@@ -28,12 +28,10 @@ const Login = () => {
       const token = response.data.token;
   
       if (token) {
-        // Store token in local storage and update authentication context
         localStorage.setItem('token', token);
         login(token);
   
-        // Make the get request with the token in the authorization header
-        const userResponse = await axios.get(`{${AUTH_URL}currentUser`, {
+        const userResponse =await axios.get(`${AUTH_URL}currentUser`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
