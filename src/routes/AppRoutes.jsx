@@ -2,16 +2,15 @@ import { createBrowserRouter } from "react-router-dom";
 import AuthLayout from "../layout/AuthLayout";
 import ErrorPage from "../pages/shared/ErrorPage";
 import MasterLayout from "../layout/MasterLayout";
-
 import Login from "../pages/auth/login/Login";
 import ForgetPassword from "./../pages/auth/forgetPassword/ForgetPassword";
 import Register from "../pages/auth/register/Register";
 import ResetPassword from "./../pages/auth/resetPassword/ResetPassword";
 import ProtectedRoute from "../components/auth/ProtectedRoute";
 import Resipes from "../pages/ui/Resipes";
-import Categories from "../pages/ui/Categories";
 import Users from "../pages/ui/Users";
 import Home from "../pages/ui/home/Home";
+import Categories from "../pages/ui/categories/Categories";
 
 const routers = createBrowserRouter([
   {

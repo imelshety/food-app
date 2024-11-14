@@ -10,6 +10,9 @@ header {
     padding-inline: 1px;
     position: relative;
     overflow: hidden;
+    background-image: url('/assets/shapes/headerBg.svg');
+    background-position: center center;
+    background-size: cover;
 }
 
 /* Small devices (portrait phones, 320px and up) */

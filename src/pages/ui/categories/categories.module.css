@@ -1,0 +1,44 @@
+.heading
+{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #1F263E !important;
+}
+.desc
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #323C47 !important;
+}
+.btn
+{
+    background-color: #009247;
+    border-radius: 8px;
+    text-align: center;
+    padding: 14px 40px;
+    color: white;
+    border: #F0FFEF;
+    font-weight: bold;
+    text-decoration: none;
+}
+.tableHeader
+{
+    background-color: #E2E5EB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 8px;
+    padding-block:16px;
+    padding-inline: 48px;
+    width: 98%;
+}
+.tableHeader p 
+{
+    color: #1F263E;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}

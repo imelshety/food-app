@@ -1,0 +1,46 @@
+.customTable {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .tableHeader {
+    background-color: #e2e5eb !important;
+    color: #1f263e;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+  }
+  
+  .tableHeader th {
+    padding: 16px;
+  }
+  
+  tbody td {
+    padding: 12px;
+    color: #555;
+  }
+  
+  .actionCell {
+    position: relative;
+    overflow: visible; /* Ensure dropdowns are not clipped */
+  }
+  
+  .dotsToggle {
+    font-size: 1.5rem !important;
+    color: #009247 !important;
+    border: none;
+    cursor: pointer;
+    text-decoration: none   !important;
+  }
+  
+  .dropdownItem {
+    display: flex;
+    align-items: center;
+    color: #009247 !important;
+  }
+  
+  .actionIcon {
+    margin-right: 8px;
+    color: #009247;
+  }
+  
